@@ -1,0 +1,66 @@
+.yt-button {
+  background-color: rgb(200, 0, 0);
+  color: white;
+  padding-left: 13.5px;
+  padding-right: 13.5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: padding-left, padding-right, padding-bottom, padding-top, box-shadow, font-size, font-weight 0.15s;
+}
+
+button:hover {
+  opacity: 0.7;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 14.5px;
+  padding-right: 14.5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  opacity: 0.3;
+  padding-left: 13.5px;
+  padding-right: 13.5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.x-button {
+  background-color: magenta;
+  color: white;
+  padding-left: 13.5px;
+  padding-right: 13.5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: padding-left, padding-right, padding-bottom, padding-top, box-shadow, font-size, font-weight 0.15s;
+}
+
+.r-button {
+  display: block;
+  background-color: black;
+  color: white;
+  border: none;
+  padding-left: 13.5px;
+  padding-right: 13.5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: padding-left, padding-right, padding-bottom, padding-top, box-shadow, font-size, font-weight 0.15s;
+  margin-bottom: 140px;
+}
+
+.hello {
+  color: rgb(176, 176, 42);
+  margin-bottom: 100px;
+}
+
+.next-pg {
+  margin-top: 140px;
+}
