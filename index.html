@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="grid">
+        <article class="article" id="a1">1</article>
+        <article class="article" id="a2">2</article>
+        <article class="article" id="a3">3</article>
+        <article class="article" id="a4">4</article>
+        <article class="article" id="a5">5</article>
+        <article class="article" id="a6">6</article>
+    </main>
+</body>
+<script>
+    window.onload = animate;
+
+    function delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function animate() {
+        Body = document.querySelector('body');
+        article = document.querySelector('#a1');
+        article2 = document.querySelector('#a2');
+        article3 = document.querySelector('#a3');
+        article4 = document.querySelector('#a4');
+        article5 = document.querySelector('#a5');
+        article6 = document.querySelector('#a6');
+        Body.style.transform = 'translateY(-50%)';
+        await delay(1000);
+        article.style.transform = 'translateY(-20%)';
+        await delay(600);
+        article.style.transform = 'translateY(0)';
+        await delay(600);
+        article2.style.transform = 'translateY(-20%)';
+        await delay(600);
+        article2.style.transform = 'translateY(0)';
+        await delay(600);
+        article3.style.transform = 'translateY(-20%)';
+        await delay(600);
+        article3.style.transform = 'translateY(0)';
+        await delay(600);
+        article4.style.transform = 'translateX(-20%)';
+        await delay(600);
+        article4.style.transform = 'translateX(0)';
+        await delay(600);
+        article5.style.transform = 'translateY(20%)';
+        await delay(600);
+        article5.style.transform = 'translateY(0)';
+        await delay(600);
+        article6.style.transform = 'translateX(20%)';
+        await delay(600);
+        article6.style.transform = 'translateX(0)';
+        await delay(600);
+        article.style.transform = 'translateY(-20%)';
+        article.style.transform = 'translateX(-20%)';
+        article2.style.transform = 'translateY(-20%)';
+        article3.style.transform = 'translateY(-20%)';
+        article3.style.transform = 'translateX(20%)';
+        article4.style.transform = 'translateX(-20%)';
+        article5.style.transform = 'translateY(20%)';
+        article6.style.transform = 'translateX(20%)';
+        
+        await delay(800);
+
+        article.style.transform = 'translateY(0)';
+        article2.style.transform = 'translateY(0)';
+        article3.style.transform = 'translateY(0)';
+        article4.style.transform = 'translateX(0)';
+        article5.style.transform = 'translateY(0)';
+        article6.style.transform = 'translateX(0)';
+    }
+
+</script>
+</html>
